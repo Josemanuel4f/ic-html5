@@ -3,7 +3,7 @@ pipeline {
         TOKEN = credentials('SURGE_TOKEN')
       }
     agent {
-        docker { image 'josedom24/debian-npm'
+        docker { image 'hakkei/debian-npm'
         args '-u root:root'
         }
     }
