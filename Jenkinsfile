@@ -3,7 +3,7 @@ pipeline {
         TOKEN = credentials('SURGE_TOKEN')
       }
     agent {
-        docker { image 'hakkei/debian-npm'
+        docker { image 'awachters/debian-npm'
         args '-u root:root'
         }
     }
